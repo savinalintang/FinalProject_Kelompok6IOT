@@ -1,11 +1,12 @@
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
+#include <Wire.h>
 #include <PubSubClient.h>
 #include <LiquidCrystal_I2C.h>
 #include <DHT.h>
 
-const char *ssid = "ssid"; // Ubah SSID dengan SSID wifi anda
-const char *password = "password"; // Ubah password dengan password wifi anda
+const char *ssid = "LULUK"; // Ubah SSID dengan SSID wifi anda
+const char *password = "kynanti123"; // Ubah password dengan password wifi anda
 const char *mqtt_server = "152.69.200.232";
 WiFiClient espClient;
 PubSubClient client(espClient);
